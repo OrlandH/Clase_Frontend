@@ -23,9 +23,10 @@ function App() {
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route index element={<LandinPage/>}/>
+          
 
           <Route path='/' element={<Auth/>}>
+            <Route index element={<LandinPage/>}/>
             <Route path='login' element={<Login/>}/>
             <Route path='register' element={<Register/>}/>
             <Route path='forgot/:id' element={<Forgot/>}/>
